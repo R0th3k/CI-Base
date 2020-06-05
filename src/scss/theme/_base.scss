@@ -1,0 +1,99 @@
+::-moz-selection {
+    color: white;
+    background: $primary;
+}
+
+::selection {
+    color: white;
+    background: $primary;
+}
+
+::-webkit-input-placeholder {
+    color: $dark;
+    opacity: 1 !important;
+}
+::-moz-placeholder {
+    color: $dark;
+    opacity: 1 !important;
+}
+:-ms-input-placeholder {
+    color: $dark;
+    opacity: 1 !important;
+}
+:-moz-placeholder {
+    color: $dark;
+    opacity: 1 !important;
+}
+
+pre {
+    background: darken(green,20);
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    &::-moz-selection {
+        color: white;
+        background: black;
+    }
+
+    &::selection {
+        color: white;
+        background: black;
+    }
+}
+abbr[title]{
+  text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: $bg-app;
+    position: relative;
+}
+
+@for $i from 1 through 6 {
+    h#{$i}.title {
+        font-family: $heading-font;
+        font-weight: 900;
+    }
+    h#{$i}.subtitle {
+        font-family: $subheading-font;
+        font-weight: 300;
+    }
+}
+*,
+figure {
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+}
+picture {
+    margin: 0;
+    padding: 0;
+}
+strong {
+    color: $primary;
+}
+
+a {
+    color: $primary;
+    &:hover {
+        color:$secondary;
+        text-decoration: underline;
+    }
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+
+        outline: 0;
+        text-decoration: none;
+    }
+}

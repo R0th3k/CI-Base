@@ -1,0 +1,32 @@
+//core
+@import 'core/functions';
+@import 'core/mixins';
+
+//theme
+@import 'theme/colors';
+@import 'variables';
+@import "../../node_modules/bulma/bulma.sass";
+@import 'theme/fonts';
+@import 'theme/base';
+@import 'theme/theme';
+@import 'theme/layout';
+@import 'theme/layout-backend';
+
+//core
+@import 'core/helpers';
+
+//Librerias
+@import '../../node_modules/node-waves/src/scss/waves.scss';
+@import '../../node_modules/loaders.css/src/loaders.scss';
+@import '../../node_modules/magic.css/dist/magic.css';
+@import '../../node_modules/animate.css/animate.css';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'theme/overrides';
+
+
+
+
+
+
+
+

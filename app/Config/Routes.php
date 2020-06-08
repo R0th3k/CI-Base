@@ -44,12 +44,15 @@ $routes->post('/register/create', 'Auth::createUserInfrontend');
 
 $routes->group('admin', function($routes){
   $routes->get('/', 'Backend::index');
-  $routes->get('users', 'Backend::users');
-  $routes->get('users/new', 'Backend::newUser');
-  $routes->post('users/save', 'Backend::saveUser');
-  $routes->post('users/delete/(:num)', 'Backend::deleteUser/$1');
-  $routes->post('users/edit/(:num)', 'Backend::editUser/$1');
-  $routes->post('users/update/(:num)', 'Backend::updateUser/$1');
+});
+
+$routes->group('admin/users', function($routes){
+  $routes->get('/', 'Users::users');
+  $routes->get('new', 'Users::newUser');
+  $routes->post('save', 'Users::saveUser');
+  $routes->post('delete/(:num)', 'Users::deleteUser/$1');
+  $routes->post('edit/(:num)', 'Users::editUser/$1');
+  $routes->post('update/(:num)', 'Users::updateUser/$1');
 });
 
 $routes->group('admin/samples', function($routes){

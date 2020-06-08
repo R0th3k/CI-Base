@@ -32,6 +32,16 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Frontend::index');
 
+$routes->get('/login', 'Auth::index');
+$routes->post('/login/auth', 'Auth::autenticate');
+$routes->get('/logout', 'Auth::sessionDestroy');
+$routes->get('/recover-password', 'Auth::recoverPassword');
+$routes->post('/recover-password/get-token', 'Auth::recoverPasswordToken');
+$routes->get('/recover-password/change/(:any)', 'Auth::changePassword/$1');
+$routes->post('/recover-password/set-new-password/(:num)', 'Auth::setNewPassword/$1');
+$routes->get('/register', 'Auth::register');
+$routes->post('/register/create', 'Auth::createUserInfrontend');
+
 $routes->group('admin', function($routes){
   $routes->get('/', 'Backend::index');
 });

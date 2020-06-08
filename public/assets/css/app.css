@@ -1,6 +1,88 @@
 h3[data-v-49a9e44e] {
     color: var(--primary);
 }
+.white[data-v-7dc7f538] {
+    color: white;
+}
+.black[data-v-7dc7f538] {
+    color: black;
+}
+.ml[data-v-c4da649e] {
+    margin-right: 0.25rem;
+}
+.button[data-v-c4da649e] {
+    transition: all ease 0.5s;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
+.button[data-v-c4da649e]:hover {
+    transition: all ease 0.5s;
+}
+.button[data-v-c4da649e]:not(.is-text) {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+    transition-duration: 280ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    font-weight: 600;
+}
+.button.is-primary[data-v-c4da649e] {
+    color: white;
+}
+.button.is-danger[data-v-c4da649e] {
+    color: white;
+}
+.button.is-success[data-v-c4da649e] {
+    color: white;
+}
+.button.is-text[data-v-c4da649e] {
+    text-decoration: none;
+}
+.notification[data-v-ebaf4466] {
+    color: white;
+}
+small[data-v-ebaf4466] {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.component[data-v-702bfc58] {
+    display: flex;
+    align-items: center;
+}
+.avatar[data-v-702bfc58] {
+    --mini: 24px;
+    --small: 40px;
+    --medium: 90px;
+    --large: 160px;
+    border-radius: 50%;
+    border: solid 2px white;
+    overflow: hidden;
+    background: azure;
+    margin: 0 0.35rem;
+}
+.avatar.mini[data-v-702bfc58] {
+    width: var(--mini);
+    height: var(--mini);
+}
+.avatar.small[data-v-702bfc58] {
+    width: var(--small);
+    height: var(--small);
+}
+.avatar.medium[data-v-702bfc58] {
+    width: var(--medium);
+    height: var(--medium);
+}
+.avatar.large[data-v-702bfc58] {
+    width: var(--large);
+    height: var(--large);
+}
+.avatar img[data-v-702bfc58] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: initial;
+}
 /*!
  * Magic - https://www.minimamente.com
  * Licensed under the MIT license - https://opensource.org/licenses/MIT

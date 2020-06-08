@@ -7,7 +7,7 @@
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <link rel="manifest" href="<?php echo base_url('site.webmanifest'); ?>">
         <link
             href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600;900&display=swap"
@@ -19,7 +19,9 @@
             rel="icon"
             type="image/png"
             href="<?php echo base_url('assets/images/icon.png'); ?>">
-
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css'); ?>">
         <?php echo $this->renderSection('styles'); ?>
 

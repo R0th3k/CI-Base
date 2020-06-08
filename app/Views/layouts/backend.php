@@ -20,6 +20,9 @@
             type="image/png"
             href="<?php echo base_url('assets/images/icon.png'); ?>">
         <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css'); ?>">
         <?php echo $this->renderSection('styles'); ?>
 
@@ -55,7 +58,7 @@
                 <div id="touchMenu"></div>
 
                 <div id="navMenu" class="navbar-menu column is-hidden-touch">
-                    
+
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <a class="button is-white">
@@ -64,19 +67,14 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="navbar-item">
-                            <a class="button is-white">
-                                <span class="icon">
-                                    <i class="fa fa-lg fa-power-off"></i>
-                                </span>
-                            </a>
-                        </div>
+
                         <div class="navbar-item has-dropdown">
                             <a class="navbar-link">
-                                <figure class="image avatar is-32x32">
-                                    <img class="is-rounded" src="<?=base_url('assets/images/admin/user1.png')?>">
-                                </figure>
-                                &nbsp; Hi, Username
+                            <avatar
+                            name="<?php echo $session->user_name . ' ' . $session->user_lastname?>"
+                            photo="<?=$session->user_avatar?>"
+                            desc="<?php echo $session->user_name . ' ' . $session->user_lastname?>"
+                            size="small"></avatar>
                             </a>
                             <div class="navbar-dropdown is-right">
                                 <a class="navbar-item">
@@ -94,6 +92,15 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="navbar-item">
+                            <a href="<?=base_url('logout')?>" class="button is-white">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-power-off"></i>
+                                </span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </nav>
@@ -102,10 +109,27 @@
             <div class="columns" id="app-content">
 
                 <div class="column is-2 is-fullheight is-hidden-touch" id="navigation">
+
                     <aside class="menu">
                         <p class="menu-label is-hidden-touch">
                             General
                         </p>
+
+                        <ul class="menu-list">
+                            <li>
+                                <a class="" href="<?=base_url('admin/samples/login')?>">
+                                    <span class="icon">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                    Login
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p class="menu-label is-hidden-touch">
+                            Sample Pages
+                        </p>
+
                         <ul class="menu-list">
                             <li>
                                 <a class="is-active" href="<?=base_url('admin')?>">
@@ -131,7 +155,7 @@
                                     UI Elements
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a class="" href="<?=base_url('admin/samples/datatables')?>">
                                     <span class="icon">
@@ -140,22 +164,9 @@
                                     Datatables
                                 </a>
                             </li>
-                            
+
                         </ul>
 
-                        <p class="menu-label is-hidden-touch">
-                            Sample Pages
-                        </p>
-                        <ul class="menu-list">
-                            <li>
-                                <a class="" href="<?=base_url('admin/samples/login')?>">
-                                    <span class="icon">
-                                        <i class="fa fa-lock"></i>
-                                    </span>
-                                    Login
-                                </a>
-                            </li>
-                        </ul>
                     </aside>
                 </div>
 

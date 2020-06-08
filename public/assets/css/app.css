@@ -58,6 +58,25 @@ small[data-v-4dcccbef] {
     display: block;
     margin-bottom: 0.5rem;
 }
+.notification[data-v-104846fa] {
+    color: white;
+}
+small[data-v-104846fa] {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.notification[data-v-4d1304b7] {
+    color: white;
+}
+small[data-v-4d1304b7] {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.toggle-password-visibility[data-v-4d1304b7] {
+    cursor: pointer;
+    margin-top: -14px;
+    margin-right: 7px;
+}
 .component[data-v-702bfc58] {
     display: flex;
     align-items: center;

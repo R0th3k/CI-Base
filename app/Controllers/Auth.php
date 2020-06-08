@@ -131,7 +131,7 @@ class Auth extends BaseController
                 'user_password' => encrypt($this->request->getPost('user_password')),
                 'user_password_recovery_token' => null,
             ]);
-            return redirect()->to(base_url('login'))->with('message', 'Se ha creado tu cuenta, ahora puedes iniciar sesión.')->with('type', 'success');
+            return redirect()->to(base_url('login'))->with('message', 'Se ha cambiado tu contraseña, ahora puedes iniciar sesión.')->with('type', 'success');
 
         } else {
             return redirect()->back()->with('message', $validation->listErrors())->with('type', 'danger');

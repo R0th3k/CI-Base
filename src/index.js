@@ -10,6 +10,8 @@ Vue.use(VueAxios, axios)
 import holamundo from './js/components/HolaMundo.vue';
 import login from './js/components/Login.vue';
 import register from './js/components/Register.vue';
+import recover_password from './js/components/RecoverPassword.vue';
+import change_password from './js/components/ChangePassword.vue';
 
 import avatar from './js/components/ui/Avatar.vue';
 
@@ -21,6 +23,8 @@ new Vue({
         login,
         avatar,
         register,
+        recover_password,
+        change_password,
     },
     data: {
         hello: 'Hello World !'

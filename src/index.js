@@ -9,6 +9,7 @@ Vue.use(VueAxios, axios)
 
 import holamundo from './js/components/HolaMundo.vue';
 import login from './js/components/Login.vue';
+import register from './js/components/Register.vue';
 
 import avatar from './js/components/ui/Avatar.vue';
 
@@ -19,6 +20,7 @@ new Vue({
         holamundo,
         login,
         avatar,
+        register,
     },
     data: {
         hello: 'Hello World !'

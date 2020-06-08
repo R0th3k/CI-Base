@@ -2,6 +2,16 @@
 
 class Samples extends BaseController
 {
+	public function dashboard()
+	{
+		$session = session();
+        $data = array(
+          'title' => 'Forms',
+          'session' => $session,
+        );
+		return view('samples/dashboard',$data);
+  }
+
 	public function forms()
 	{
 		$session = session();
@@ -11,7 +21,7 @@ class Samples extends BaseController
         );
 		return view('samples/forms',$data);
 	}
-  
+
   public function ui()
 	{
 		$session = session();
@@ -21,9 +31,9 @@ class Samples extends BaseController
         );
 		return view('samples/ui',$data);
   }
-  
- 
- 
+
+
+
   public function datatables()
 	{
 		$session = session();
@@ -33,7 +43,7 @@ class Samples extends BaseController
         );
 		return view('samples/datatables',$data);
 	}
- 
+
   public function login()
 	{
 		$session = session();

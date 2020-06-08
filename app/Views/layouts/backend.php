@@ -41,7 +41,7 @@
                 id="app-header">
                 <div class="navbar-brand column is-2 is-paddingless">
                     <a class="navbar-item" href="<?=base_url('admin')?>">
-                        BULMA ADMIN
+                        CI Base
                     </a>
                     <a
                         role="button"
@@ -117,13 +117,23 @@
 
                         <ul class="menu-list">
                             <li>
-                                <a class="" href="<?=base_url('admin/samples/login')?>">
+                                <a class="<?php echo (current_url() == base_url('admin')) ? 'is-active' : ''?>" href="<?=base_url('admin')?>">
                                     <span class="icon">
-                                        <i class="fa fa-lock"></i>
+                                        <i class="fa fa-home"></i>
                                     </span>
-                                    Login
+                                    Inicio
                                 </a>
                             </li>
+
+                            <li>
+                                <a class="<?php echo (current_url() == base_url('admin/users')) ? 'is-active' : ''?>" href="<?=base_url('admin/users')?>">
+                                    <span class="icon">
+                                        <i class="fa fa-users"></i>
+                                    </span>
+                                    Usuarios
+                                </a>
+                            </li>
+
                         </ul>
 
                         <p class="menu-label is-hidden-touch">
@@ -132,7 +142,7 @@
 
                         <ul class="menu-list">
                             <li>
-                                <a class="is-active" href="<?=base_url('admin')?>">
+                                <a class="<?php echo (current_url() == base_url('admin/samples/dashboard')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/dashboard')?>">
                                     <span class="icon">
                                         <i class="fa fa-home"></i>
                                     </span>
@@ -140,7 +150,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="" href="<?=base_url('admin/samples/forms')?>">
+                                <a class="<?php echo (current_url() == base_url('admin/samples/forms')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/forms')?>">
                                     <span class="icon">
                                         <i class="fa fa-edit"></i>
                                     </span>
@@ -148,7 +158,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="" href="<?=base_url('admin/samples/ui')?>">
+                                <a class="<?php echo (current_url() == base_url('admin/samples/ui')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/ui')?>">
                                     <span class="icon">
                                         <i class="fa fa-desktop"></i>
                                     </span>
@@ -157,7 +167,7 @@
                             </li>
 
                             <li>
-                                <a class="" href="<?=base_url('admin/samples/datatables')?>">
+                                <a class="<?php echo (current_url() == base_url('admin/samples/datatables')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/datatables')?>">
                                     <span class="icon">
                                         <i class="fa fa-table"></i>
                                     </span>

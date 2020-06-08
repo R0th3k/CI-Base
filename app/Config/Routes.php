@@ -44,9 +44,16 @@ $routes->post('/register/create', 'Auth::createUserInfrontend');
 
 $routes->group('admin', function($routes){
   $routes->get('/', 'Backend::index');
+  $routes->get('users', 'Backend::users');
+  $routes->get('users/new', 'Backend::newUser');
+  $routes->post('users/save', 'Backend::saveUser');
+  $routes->post('users/delete/(:num)', 'Backend::deleteUser/$1');
+  $routes->post('users/edit/(:num)', 'Backend::editUser/$1');
+  $routes->post('users/update/(:num)', 'Backend::updateUser/$1');
 });
 
 $routes->group('admin/samples', function($routes){
+  $routes->get('dashboard', 'Samples::dashboard');
   $routes->get('forms', 'Samples::forms');
   $routes->get('ui', 'Samples::ui');
   $routes->get('datatables', 'Samples::datatables');

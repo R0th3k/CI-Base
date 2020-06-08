@@ -77,6 +77,40 @@ small[data-v-4d1304b7] {
     margin-top: -14px;
     margin-right: 7px;
 }
+.notification[data-v-65b83822] {
+    color: white;
+}
+.generate-password[data-v-65b83822] {
+    cursor: pointer;
+    margin-right: 7px;
+}
+small[data-v-65b83822] {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.select[data-v-65b83822] {
+    width: 100%;
+}
+.select select[data-v-65b83822] {
+    width: 100%;
+}
+.notification[data-v-31518921] {
+    color: white;
+}
+.generate-password[data-v-31518921] {
+    cursor: pointer;
+    margin-right: 7px;
+}
+small[data-v-31518921] {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.select[data-v-31518921] {
+    width: 100%;
+}
+.select select[data-v-31518921] {
+    width: 100%;
+}
 .component[data-v-702bfc58] {
     display: flex;
     align-items: center;
@@ -17853,40 +17887,40 @@ a:active, a:focus, a:hover, a:visited {
     width: 57px;
 }
 .ball-grid-beat > div:nth-child(1) {
-    animation-delay: 0.46s;
-    animation-duration: 1.25s;
+    animation-delay: 0.04s;
+    animation-duration: 0.64s;
 }
 .ball-grid-beat > div:nth-child(2) {
-    animation-delay: 0.53s;
-    animation-duration: 0.85s;
+    animation-delay: 0.27s;
+    animation-duration: 1.16s;
 }
 .ball-grid-beat > div:nth-child(3) {
-    animation-delay: -0.01s;
-    animation-duration: 0.72s;
+    animation-delay: 0.11s;
+    animation-duration: 1.6s;
 }
 .ball-grid-beat > div:nth-child(4) {
-    animation-delay: 0.27s;
-    animation-duration: 1.12s;
+    animation-delay: -0.04s;
+    animation-duration: 1.56s;
 }
 .ball-grid-beat > div:nth-child(5) {
-    animation-delay: -0.15s;
-    animation-duration: 1.17s;
+    animation-delay: -0.12s;
+    animation-duration: 0.97s;
 }
 .ball-grid-beat > div:nth-child(6) {
-    animation-delay: 0.38s;
-    animation-duration: 1.55s;
+    animation-delay: 0.11s;
+    animation-duration: 1.13s;
 }
 .ball-grid-beat > div:nth-child(7) {
-    animation-delay: -0.04s;
-    animation-duration: 0.85s;
+    animation-delay: 0.4s;
+    animation-duration: 1.37s;
 }
 .ball-grid-beat > div:nth-child(8) {
-    animation-delay: 0.28s;
-    animation-duration: 0.86s;
+    animation-delay: 0.24s;
+    animation-duration: 0.8s;
 }
 .ball-grid-beat > div:nth-child(9) {
-    animation-delay: 0.16s;
-    animation-duration: 0.8s;
+    animation-delay: 0.31s;
+    animation-duration: 1.59s;
 }
 .ball-grid-beat > div {
     background-color: #fff;
@@ -17919,40 +17953,40 @@ a:active, a:focus, a:hover, a:visited {
     width: 57px;
 }
 .ball-grid-pulse > div:nth-child(1) {
-    animation-delay: 0.45s;
-    animation-duration: 0.67s;
+    animation-delay: 0.61s;
+    animation-duration: 1.43s;
 }
 .ball-grid-pulse > div:nth-child(2) {
-    animation-delay: 0.36s;
-    animation-duration: 1.57s;
+    animation-delay: 0.42s;
+    animation-duration: 0.66s;
 }
 .ball-grid-pulse > div:nth-child(3) {
-    animation-delay: 0.28s;
-    animation-duration: 0.84s;
+    animation-delay: -0.11s;
+    animation-duration: 1.26s;
 }
 .ball-grid-pulse > div:nth-child(4) {
-    animation-delay: -0.03s;
-    animation-duration: 0.87s;
+    animation-delay: 0.26s;
+    animation-duration: 0.89s;
 }
 .ball-grid-pulse > div:nth-child(5) {
-    animation-delay: 0.4s;
-    animation-duration: 1s;
+    animation-delay: 0.14s;
+    animation-duration: 0.62s;
 }
 .ball-grid-pulse > div:nth-child(6) {
-    animation-delay: 0.53s;
-    animation-duration: 1.35s;
+    animation-delay: 0.75s;
+    animation-duration: 1.41s;
 }
 .ball-grid-pulse > div:nth-child(7) {
-    animation-delay: 0.1s;
-    animation-duration: 1.56s;
+    animation-delay: 0.24s;
+    animation-duration: 1.06s;
 }
 .ball-grid-pulse > div:nth-child(8) {
-    animation-delay: 0.18s;
-    animation-duration: 1.07s;
+    animation-delay: 0.59s;
+    animation-duration: 0.84s;
 }
 .ball-grid-pulse > div:nth-child(9) {
-    animation-delay: 0.35s;
-    animation-duration: 0.75s;
+    animation-delay: 0.67s;
+    animation-duration: 0.83s;
 }
 .ball-grid-pulse > div {
     background-color: #fff;
@@ -18252,20 +18286,20 @@ a:active, a:focus, a:hover, a:visited {
     }
 }
 .line-scale-party > div:nth-child(1) {
-    animation-delay: 0.5s;
-    animation-duration: 0.54s;
+    animation-delay: 0.34s;
+    animation-duration: 1.22s;
 }
 .line-scale-party > div:nth-child(2) {
-    animation-delay: 0.59s;
-    animation-duration: 0.88s;
+    animation-delay: 0.6s;
+    animation-duration: 0.58s;
 }
 .line-scale-party > div:nth-child(3) {
-    animation-delay: 0.15s;
-    animation-duration: 0.98s;
+    animation-delay: -0.15s;
+    animation-duration: 0.61s;
 }
 .line-scale-party > div:nth-child(4) {
-    animation-delay: 0.09s;
-    animation-duration: 1.24s;
+    animation-delay: 0.45s;
+    animation-duration: 1.21s;
 }
 .line-scale-party > div {
     background-color: #fff;

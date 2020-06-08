@@ -194,6 +194,7 @@
         <!--/app-->
 
         <script src="<?=base_url('assets/js/app.js')?>"></script>
+
         <?php echo $this->renderSection('scripts'); ?>
     </body>
 

@@ -125,6 +125,16 @@
                                 </a>
                             </li>
 
+
+                            <li>
+                                <a class="<?php echo (current_url() == base_url('admin/products')) ? 'is-active' : ''?>" href="<?=base_url('admin/products')?>">
+                                    <span class="icon">
+                                        <i class="fa fa-users"></i>
+                                    </span>
+                                    Productos
+                                </a>
+                            </li>
+
                             <li>
                                 <a class="<?php echo (current_url() == base_url('admin/users')) ? 'is-active' : ''?>" href="<?=base_url('admin/users')?>">
                                     <span class="icon">
@@ -133,6 +143,7 @@
                                     Usuarios
                                 </a>
                             </li>
+
 
                         </ul>
 

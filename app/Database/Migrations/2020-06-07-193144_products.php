@@ -22,6 +22,12 @@ class Products extends Migration
                 'constraint' => '255',
             ],
 
+            'product_model' =>
+            [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ],
+
             'product_slug' =>
             [
                 'type' => 'VARCHAR',

@@ -16,8 +16,12 @@ import change_password from './js/components/ChangePassword.vue';
 import new_user from './js/components/NewUser.vue';
 import edit_user from './js/components/editUser.vue';
 
+import new_product from './js/components/NewProduct.vue';
+// import edit_product from './js/components/EditProduct.vue';
+
 import avatar from './js/components/ui/Avatar.vue';
 import btn from './js/components/ui/Button.vue';
+import file_select from './js/components/ui/FileSelect.vue';
 
 
 new Vue({
@@ -32,6 +36,9 @@ new Vue({
         btn,
         new_user,
         edit_user,
+        new_product,
+        // edit_product,
+        file_select,
     },
     data: {
         hello: 'Hello World !'

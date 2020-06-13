@@ -1,16 +1,28 @@
 .navbar-link:not(.is-arrowless)::after {
-  border-color: $primary;
+    border-color: $primary;
 }
 
-a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
-  background-color: #fafafa;
-  color: $primary;
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+    background-color: #fafafa;
+    color: $primary;
 }
 
 .breadcrumb a {
-  color: $primary;
-  &:hover{
-    color:$secondary;
-    text-decoration: underline;
-  }
+    color: $primary;
+    &:hover {
+        color: $secondary;
+        text-decoration: underline;
+    }
+}
+
+.ck-editor__editable_inline,
+.ck.ck-editor {
+    min-height: 250px;
 }

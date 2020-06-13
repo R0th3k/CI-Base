@@ -55,6 +55,20 @@ $routes->group('admin/users', function($routes){
   $routes->post('update/(:num)', 'Users::updateUser/$1');
 });
 
+$routes->group('admin/products', function($routes){
+  $routes->get('/', 'Products::products');
+  $routes->get('new', 'Products::newProduct');
+  $routes->post('save', 'Products::saveProduct');
+  $routes->post('delete/(:num)', 'Products::deleteProduct/$1');
+  $routes->post('edit/(:num)', 'Products::editProduct/$1');
+  $routes->post('update/(:num)', 'Products::updateProduct/$1');
+});
+
+$routes->group('api', function($routes){
+  $routes->get('brands', 'Api::brands');
+  $routes->get('categories', 'Api::categories');
+});
+
 $routes->group('admin/samples', function($routes){
   $routes->get('dashboard', 'Samples::dashboard');
   $routes->get('forms', 'Samples::forms');

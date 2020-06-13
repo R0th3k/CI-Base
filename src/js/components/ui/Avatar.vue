@@ -1,7 +1,7 @@
 <template>
   <div class="component">
     <div class="avatar" :class="this.size">
-        <img :src="url + 'assets/uploads/' + this.photo" :alt="this.desc">
+        <img :src="url + 'assets/images/uploads/' + this.photo" :alt="this.desc">
     </div>
     <span v-if="this.name">{{this.name}}</span>
   </div>

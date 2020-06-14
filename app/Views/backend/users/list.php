@@ -52,7 +52,7 @@ $type = session('type');?>
             </div>
             <div class="field has-addons">
                 <p class="control">
-                    <a class="button" href="<?php echo base_url('admin/users/new'); ?>">
+                    <a class="button is-primary c-white" href="<?php echo base_url('admin/users/new'); ?>">
                         <span class="icon is-small">
                             <i class="fa fa-plus"></i>
                         </span>
@@ -101,7 +101,7 @@ $type = session('type');?>
                   <?php foreach($users as $user):?>
                     <tr>
                       <td><?=$user['id_user']?></td>
-                      <td><avatar name="" photo="<?=$user['user_avatar']?>" desc="" size="mini"></avatar></td>
+                      <td><avatar name="" photo="<?=$user['user_avatar']?>" desc="" size="small"></avatar></td>
                       <td><?=$user['user_name']?></td>
                       <td><?=$user['user_lastname']?></td>
                       <td><?=$user['user_email']?></td>

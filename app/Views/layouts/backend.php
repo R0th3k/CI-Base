@@ -20,6 +20,7 @@
             type="image/png"
             href="<?php echo base_url('assets/images/icon.png'); ?>">
         <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">

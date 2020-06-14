@@ -65,7 +65,7 @@ class Products extends BaseController
         $data = array(
             'title' => 'Editar Producto: ' . $product['product_name'],
             'session' => $session,
-            'user' => $product,
+            'product' => $product,
         );
 
         return view('backend/products/edit', $data);
@@ -77,30 +77,49 @@ class Products extends BaseController
         $product = new ProductsModel();
         $validation = \Config\Services::validation();
 
-        if ($this->request->getPost('product_role') === 'root' || $this->request->getPost('product_role') === 'admin' || $this->request->getPost('product_role') === 'teacher') {
-            $permission = 'backend';
-        } else {
-            $permission = 'frontend';
-        }
+
 
         if ($this->validate([
-            'product_name' => 'min_length[3]|max_length[255]',
-            'product_lastname' => 'min_length[3]|max_length[255]',
-            'product_phone' => 'min_length[10]|max_length[255]',
+            'product_name' => 'required|min_length[3]',
+            'product_model' => 'required|min_length[3]',
+            //'product_image' => 'min_length[3]',
+            'product_description' => 'required|min_length[3]',
+            'product_price' => 'min_length[3]',
+            'product_price_discount' => 'min_length[0]',
+            'category_id' => 'required',
+            'brand_id' => 'required',
         ])) {
+
+
+
+            $image = $this->request->getPost('actual_image');
+
+            if ($file = $this->request->getFile('product_image')) {
+
+                if ($file->isValid() && !$file->hasMoved()) {
+                    $image = $file->getRandomName();
+                    $file->move('assets/images/uploads', $image);
+                }
+            }
+
+
+
             $product->update($id, [
                 'product_name' => $this->request->getPost('product_name'),
-                'product_lastname' => $this->request->getPost('product_lastname'),
-                'product_phone' => $this->request->getPost('product_phone'),
-                'product_password' => encrypt($this->request->getPost('product_password')),
-                'product_role' => $this->request->getPost('product_role'),
-                'product_permission' => $permission,
+                'product_model' => $this->request->getPost('product_model'),
+                'product_slug' => slug($this->request->getPost('product_name')),
+                'product_description' => $this->request->getPost('product_description'),
+                'product_image' => $image,
+                'product_price' => $this->request->getPost('product_price'),
+                'product_price_discount' => $this->request->getPost('product_price_discount'),
+                'category_id' => $this->request->getPost('category_id'),
+                'brand_id' => $this->request->getPost('brand_id'),
             ]);
             return redirect()->to(base_url('admin/products'))->with('message', 'El Producto se ha actualizado con éxito')->with('type', 'info');
         } else {
             $session = session();
             $validation = \Config\Services::validation();
-            return redirect()->to(base_url('admin/products'))->with('message', $validation->listErrors());
+            return redirect()->to(base_url('admin/products'))->with('message', $validation->listErrors())->with('type', 'danger');
         }
 
     }
@@ -134,7 +153,7 @@ class Products extends BaseController
             //'product_image' => 'min_length[3]',
             'product_description' => 'required|min_length[3]',
             'product_price' => 'min_length[3]',
-
+            'product_price' => 'min_length[0]',
             'category_id' => 'required',
             'brand_id' => 'required',
         ]);

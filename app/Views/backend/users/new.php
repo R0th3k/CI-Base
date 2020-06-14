@@ -18,7 +18,7 @@ $type = session('type');?>
         <div class="column is-3">
         <btn
             link="<?php echo base_url('admin/users'); ?>"
-            c_class="is-primary"
+            c_class=""
             text="Volver a Usuarios"
             icon="navigate_before"
             target=""></btn>

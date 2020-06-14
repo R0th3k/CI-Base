@@ -154,11 +154,11 @@ $type = session('type');?>
             <div class="modal-content">
                 <div class="modal-card">
                     <header class="modal-card-head">
-                        <p class="modal-card-title">Eliminar usuario</p>
+                        <p class="modal-card-title">Eliminar Producto</p>
 
                     </header>
                     <section class="modal-card-body">
-                        <p class="is-size-4">¿Deseas borrar definitivamente al usuario
+                        <p class="is-size-4">¿Deseas borrar definitivamente al producto:
                             <?=$product['product_name']?>?</p>
                     </section>
                     <footer class="modal-card-foot">

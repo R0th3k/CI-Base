@@ -420,6 +420,7 @@
             margin-top: 20px;
         }
         li {
+
             a {
                 color: #868aa8;
                 padding: 9px 40px;
@@ -427,9 +428,13 @@
                     color: #525672;
                 }
             }
-            a.is-active {
-                color: $primary;
+
+            &:hover, &.is-active{
+              background-color: $primary;
+              a, i {
+                color: white;
                 background-color: transparent;
+            }
             }
         }
         a.is-active {

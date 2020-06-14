@@ -16160,8 +16160,11 @@ a:active, a:focus, a:hover, a:visited {
 .backend #navigation li a .icon {
     color: #525672;
 }
-.backend #navigation li a.is-active {
-    color: #dd4814;
+.backend #navigation li:hover, .backend #navigation li.is-active {
+    background-color: #dd4814;
+}
+.backend #navigation li:hover a, .backend #navigation li:hover i, .backend #navigation li.is-active a, .backend #navigation li.is-active i {
+    color: white;
     background-color: transparent;
 }
 .backend #navigation a.is-active .icon {
@@ -17920,40 +17923,40 @@ a:active, a:focus, a:hover, a:visited {
     width: 57px;
 }
 .ball-grid-beat > div:nth-child(1) {
-    animation-delay: 0.61s;
-    animation-duration: 1.56s;
+    animation-delay: 0.78s;
+    animation-duration: 1s;
 }
 .ball-grid-beat > div:nth-child(2) {
-    animation-delay: 0.63s;
-    animation-duration: 0.77s;
+    animation-delay: -0.17s;
+    animation-duration: 1.04s;
 }
 .ball-grid-beat > div:nth-child(3) {
-    animation-delay: 0.77s;
-    animation-duration: 0.79s;
+    animation-delay: 0.5s;
+    animation-duration: 1.57s;
 }
 .ball-grid-beat > div:nth-child(4) {
-    animation-delay: 0.34s;
-    animation-duration: 0.92s;
+    animation-delay: 0.49s;
+    animation-duration: 1.05s;
 }
 .ball-grid-beat > div:nth-child(5) {
-    animation-delay: 0.59s;
-    animation-duration: 0.69s;
+    animation-delay: 0.41s;
+    animation-duration: 1.37s;
 }
 .ball-grid-beat > div:nth-child(6) {
-    animation-delay: 0.28s;
-    animation-duration: 1.48s;
+    animation-delay: 0.79s;
+    animation-duration: 0.81s;
 }
 .ball-grid-beat > div:nth-child(7) {
     animation-delay: 0.62s;
-    animation-duration: 1.33s;
+    animation-duration: 1.17s;
 }
 .ball-grid-beat > div:nth-child(8) {
-    animation-delay: 0.02s;
-    animation-duration: 0.77s;
+    animation-delay: 0.78s;
+    animation-duration: 0.62s;
 }
 .ball-grid-beat > div:nth-child(9) {
-    animation-delay: 0.64s;
-    animation-duration: 1.15s;
+    animation-delay: -0.17s;
+    animation-duration: 1.44s;
 }
 .ball-grid-beat > div {
     background-color: #fff;
@@ -17986,40 +17989,40 @@ a:active, a:focus, a:hover, a:visited {
     width: 57px;
 }
 .ball-grid-pulse > div:nth-child(1) {
-    animation-delay: 0.5s;
-    animation-duration: 1.01s;
+    animation-delay: 0.19s;
+    animation-duration: 0.86s;
 }
 .ball-grid-pulse > div:nth-child(2) {
-    animation-delay: 0.12s;
-    animation-duration: 0.89s;
+    animation-delay: 0.66s;
+    animation-duration: 1.25s;
 }
 .ball-grid-pulse > div:nth-child(3) {
-    animation-delay: 0.5s;
-    animation-duration: 0.93s;
+    animation-delay: 0.7s;
+    animation-duration: 1.42s;
 }
 .ball-grid-pulse > div:nth-child(4) {
-    animation-delay: 0.37s;
-    animation-duration: 1.48s;
+    animation-delay: 0.74s;
+    animation-duration: 0.73s;
 }
 .ball-grid-pulse > div:nth-child(5) {
-    animation-delay: 0.01s;
-    animation-duration: 1.05s;
+    animation-delay: 0.51s;
+    animation-duration: 0.69s;
 }
 .ball-grid-pulse > div:nth-child(6) {
-    animation-delay: 0.32s;
-    animation-duration: 1.6s;
+    animation-delay: 0.24s;
+    animation-duration: 1.24s;
 }
 .ball-grid-pulse > div:nth-child(7) {
-    animation-delay: 0.4s;
-    animation-duration: 0.91s;
+    animation-delay: 0.2s;
+    animation-duration: 0.9s;
 }
 .ball-grid-pulse > div:nth-child(8) {
-    animation-delay: 0.21s;
-    animation-duration: 1.51s;
+    animation-delay: 0.64s;
+    animation-duration: 1.59s;
 }
 .ball-grid-pulse > div:nth-child(9) {
-    animation-delay: 0.78s;
-    animation-duration: 1.19s;
+    animation-delay: 0.35s;
+    animation-duration: 1.46s;
 }
 .ball-grid-pulse > div {
     background-color: #fff;
@@ -18319,20 +18322,20 @@ a:active, a:focus, a:hover, a:visited {
     }
 }
 .line-scale-party > div:nth-child(1) {
-    animation-delay: 0.39s;
-    animation-duration: 1.28s;
+    animation-delay: -0.06s;
+    animation-duration: 0.9s;
 }
 .line-scale-party > div:nth-child(2) {
-    animation-delay: -0.16s;
-    animation-duration: 1.17s;
+    animation-delay: 0.69s;
+    animation-duration: 0.47s;
 }
 .line-scale-party > div:nth-child(3) {
-    animation-delay: 0.78s;
-    animation-duration: 0.66s;
+    animation-delay: 0.55s;
+    animation-duration: 0.93s;
 }
 .line-scale-party > div:nth-child(4) {
-    animation-delay: 0.67s;
-    animation-duration: 1.05s;
+    animation-delay: 0.18s;
+    animation-duration: 0.4s;
 }
 .line-scale-party > div {
     background-color: #fff;

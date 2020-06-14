@@ -117,8 +117,8 @@
                         </p>
 
                         <ul class="menu-list">
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin')) ? 'is-active' : ''?>" href="<?=base_url('admin')?>">
+                            <li class="<?php echo (current_url() == base_url('admin')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('admin')?>">
                                     <span class="icon">
                                         <i class="fa fa-home"></i>
                                     </span>
@@ -127,8 +127,8 @@
                             </li>
 
 
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/products')) ? 'is-active' : ''?>" href="<?=base_url('admin/products')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/products')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('admin/products')?>">
                                     <span class="icon">
                                         <i class="fa fa-users"></i>
                                     </span>
@@ -136,8 +136,8 @@
                                 </a>
                             </li>
 
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/users')) ? 'is-active' : ''?>" href="<?=base_url('admin/users')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/users')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('admin/users')?>">
                                     <span class="icon">
                                         <i class="fa fa-users"></i>
                                     </span>
@@ -153,24 +153,24 @@
                         </p>
 
                         <ul class="menu-list">
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/samples/dashboard')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/dashboard')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/samples/dashboard')) ? 'is-active' : ''?>">
+                                <a  href="<?=base_url('admin/samples/dashboard')?>">
                                     <span class="icon">
                                         <i class="fa fa-home"></i>
                                     </span>
                                     Dashboard
                                 </a>
                             </li>
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/samples/forms')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/forms')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/samples/forms')) ? 'is-active' : ''?>">
+                                <a  href="<?=base_url('admin/samples/forms')?>">
                                     <span class="icon">
                                         <i class="fa fa-edit"></i>
                                     </span>
                                     Forms
                                 </a>
                             </li>
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/samples/ui')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/ui')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/samples/ui')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('admin/samples/ui')?>">
                                     <span class="icon">
                                         <i class="fa fa-desktop"></i>
                                     </span>
@@ -178,8 +178,8 @@
                                 </a>
                             </li>
 
-                            <li>
-                                <a class="<?php echo (current_url() == base_url('admin/samples/datatables')) ? 'is-active' : ''?>" href="<?=base_url('admin/samples/datatables')?>">
+                            <li class="<?php echo (current_url() == base_url('admin/samples/datatables')) ? 'is-active' : ''?>">
+                                <a  href="<?=base_url('admin/samples/datatables')?>">
                                     <span class="icon">
                                         <i class="fa fa-table"></i>
                                     </span>

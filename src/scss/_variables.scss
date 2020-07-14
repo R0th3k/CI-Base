@@ -1,15 +1,16 @@
 
 $bg-app:white;
 $assets:'http://localhost:3000/assets/';
+$assets:'https://aluminiotrebol.com/assets/';
 
 
 // Typography
-$family-sans-serif: 'Gothic A1' ,BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: 'Montserrat' ,BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 $family-monospace: monospace;
 $render-mode: optimizeLegibility;
-$heading-font:'Gothic A1', sans-serif;
-$subheading-font:'Gothic A1', sans-serif;
+$heading-font:'Montserrat', sans-serif;
+$subheading-font:'Montserrat', sans-serif;
 $text:#646464;
 
 

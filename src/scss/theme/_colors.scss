@@ -1,5 +1,5 @@
 // Colors
-$black:        hsl(0, 0%, 4%);
+$black:        hsl(348, 7%, 13%);
 $black-bis:    hsl(0, 0%, 7%);
 $black-ter:    hsl(0, 0%, 14%);
 
@@ -15,27 +15,27 @@ $white-bis:    hsl(0, 0%, 98%);
 $white:        hsl(0, 0%, 100%);
 
 $orange:       #dd4814;
-$yellow:       #ffd643;
-$green:        #1db94c;
+$yellow:       #D0E600;
+$green:        #00AD48;
 $turquoise:    #00d8b8;
 $cyan:         #32def5;
-$blue:         #0e72f5;
+$blue:         #00ACF6;
 $purple:       #8466d4;
-$red:          #db0d36;
+$red:          #CD0013;
 
 $silver:#A4ABBD;
 
 
 :root{
-    --primary:#dd4814;
+    --primary:#00AD48;
     --secondary: white;
     --global-text:#1b1b1b;
     --silver:#A4ABBD;
 }
 //
 
-$primary: $orange;
-$secondary: lighten($orange,10);
+$primary: $green;
+$secondary: lighten($primary,10);
 
 $info: $cyan;
 $success: $green;

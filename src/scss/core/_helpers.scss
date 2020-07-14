@@ -62,6 +62,8 @@ $app-colors: (
     7: ("yellow", $yellow),
     8: ("green", $green),
     9: ("white", $white),
+    10: ("black", $black),
+    11: ("silver", silver),
 
 );
 @each $name, $value in $app-colors {

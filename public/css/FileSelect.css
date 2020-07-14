@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.file-select > .select-button[data-v-5af97cd2] {\n  padding: 1rem;\n\n  color: white;\n  background-color: #2EA169;\n\n  border-radius: .3rem;\n\n  text-align: center;\n  font-weight: bold;\n}\n.file-select > input[type=\"file\"][data-v-5af97cd2] {\n  display: none;\n}\n", ""]);
-// Exports
-module.exports = exports;

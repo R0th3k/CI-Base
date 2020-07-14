@@ -19,7 +19,7 @@
         },
         data() {
             return {
-              url:'http://localhost:3000/',
+              url:'https://aluminiotrebol.com/',
             }
         }
     }

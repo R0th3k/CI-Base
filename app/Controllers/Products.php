@@ -15,7 +15,7 @@ class Products extends BaseController
     {
         $session = session();
 
-        $productsModel = new ProductsModel($db);
+
         $productsModel = new ProductsModel($db);
         $productsModel
             ->join('categories', 'categories.id_category = products.category_id')
@@ -84,7 +84,7 @@ class Products extends BaseController
             'product_model' => 'required|min_length[3]',
             //'product_image' => 'min_length[3]',
             'product_description' => 'required|min_length[3]',
-            'product_price' => 'min_length[3]',
+            'product_price' => 'min_length[0]',
             'product_price_discount' => 'min_length[0]',
             'category_id' => 'required',
             'brand_id' => 'required',
@@ -152,7 +152,7 @@ class Products extends BaseController
             'product_model' => 'required|min_length[3]',
             //'product_image' => 'min_length[3]',
             'product_description' => 'required|min_length[3]',
-            'product_price' => 'min_length[3]',
+            'product_price' => 'min_length[0]',
             'product_price' => 'min_length[0]',
             'category_id' => 'required',
             'brand_id' => 'required',
@@ -161,6 +161,8 @@ class Products extends BaseController
         //var_dump($validacion);
 
         if ($validacion) {
+
+          $image = 'product-default.jpg';
 
             if ($file = $this->request->getFile('product_image')) {
                 if ($file->isValid() && !$file->hasMoved()) {

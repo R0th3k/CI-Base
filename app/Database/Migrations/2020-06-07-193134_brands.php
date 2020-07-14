@@ -26,7 +26,27 @@ class Brands extends Migration
 			[
 					'type' => 'VARCHAR',
 					'constraint' => '255',
-			],
+      ],
+
+      'created_at' => [
+        'type' => 'DATETIME',
+        'constraint' => '6',
+        'null' => false,
+        'ON UPDATE CURRENT_TIMESTAMP' => true,
+    ],
+
+    'updated_at' => [
+        'type' => 'DATETIME',
+        'constraint' => '6',
+        'null' => false,
+        'ON UPDATE CURRENT_TIMESTAMP' => true,
+    ],
+
+    'deleted_at' => [
+        'type' => 'INT',
+        'null' => true,
+        'default' => null,
+    ],
 
 	]);
 	$this->forge->addKey('id_brand', true);

@@ -211,10 +211,10 @@
         font-size: 0.9rem;
         white-space: nowrap;
     }
+
     #app-header {
         .navbar-brand {
-            background: #282a3c;
-            background: #282a3c;
+            background: white;
             .navbar-item {
                 &:first-child {
                     padding: 0 40px;
@@ -408,6 +408,7 @@
     }
     #navigation {
         padding: 0;
+        padding-top: 3rem;
         background: #292C3A;
         .menu {
             font-size: 0.9rem;
@@ -583,150 +584,150 @@
     .row-item {
         margin-bottom: 1.5rem;
     }
-    .pagination {
-        font-size: 0.9rem;
-        margin: -0.25rem;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .pagination.is-small {
-        font-size: 0.65rem;
-    }
-    .pagination.is-medium {
-        font-size: 1rem;
-    }
-    .pagination.is-large {
-        font-size: 1.2rem;
-    }
-    .pagination.is-rounded {
-        .pagination-next {
-            padding-left: 1em;
-            padding-right: 1em;
-            border-radius: 290486px;
-        }
-        .pagination-previous {
-            padding-left: 1em;
-            padding-right: 1em;
-            border-radius: 290486px;
-        }
-        .pagination-link {
-            border-radius: 290486px;
-        }
-    }
-    .pagination-list {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-    .pagination-ellipsis {
-        font-size: 1em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        justify-content: center;
-        margin: 0.25rem;
-        text-align: center;
-        color: #b5b5b5;
-        pointer-events: none;
-    }
-    .pagination-link {
-        font-size: 1em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        justify-content: center;
-        margin: 0.25rem;
-        text-align: center;
-        border-color: #dbdbdb;
-        color: #363636;
-        min-width: 2.25em;
-        &:hover {
-            border-color: #b5b5b5;
-            color: #363636;
-        }
-        &:focus {
-            border-color: $primary;
-        }
-        &:active {
-            box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
-        }
-    }
-    .pagination-next {
-        font-size: 1em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        justify-content: center;
-        margin: 0.25rem;
-        text-align: center;
-        border-color: #dbdbdb;
-        color: #363636;
-        min-width: 2.25em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        white-space: nowrap;
-        &:hover {
-            border-color: #b5b5b5;
-            color: #363636;
-        }
-        &:focus {
-            border-color: $primary;
-        }
-        &:active {
-            box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
-        }
-    }
-    .pagination-previous {
-        font-size: 1em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        justify-content: center;
-        margin: 0.25rem;
-        text-align: center;
-        border-color: #dbdbdb;
-        color: #363636;
-        min-width: 2.25em;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        white-space: nowrap;
-        &:hover {
-            border-color: #b5b5b5;
-            color: #363636;
-        }
-        &:focus {
-            border-color: $primary;
-        }
-        &:active {
-            box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
-        }
-    }
-    .pagination-link[disabled] {
-        background-color: #dbdbdb;
-        border-color: #dbdbdb;
-        box-shadow: none;
-        color: #7a7a7a;
-        opacity: 0.5;
-    }
-    .pagination-next[disabled] {
-        background-color: #dbdbdb;
-        border-color: #dbdbdb;
-        box-shadow: none;
-        color: #7a7a7a;
-        opacity: 0.5;
-    }
-    .pagination-previous[disabled] {
-        background-color: #dbdbdb;
-        border-color: #dbdbdb;
-        box-shadow: none;
-        color: #7a7a7a;
-        opacity: 0.5;
-    }
-    .pagination-link.is-current {
-        background-color: $primary;
-        border-color: $primary;
-        color: #fff;
-    }
+    // .pagination {
+    //     font-size: 0.9rem;
+    //     margin: -0.25rem;
+    //     align-items: center;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    // }
+    // .pagination.is-small {
+    //     font-size: 0.65rem;
+    // }
+    // .pagination.is-medium {
+    //     font-size: 1rem;
+    // }
+    // .pagination.is-large {
+    //     font-size: 1.2rem;
+    // }
+    // .pagination.is-rounded {
+    //     .pagination-next {
+    //         padding-left: 1em;
+    //         padding-right: 1em;
+    //         border-radius: 290486px;
+    //     }
+    //     .pagination-previous {
+    //         padding-left: 1em;
+    //         padding-right: 1em;
+    //         border-radius: 290486px;
+    //     }
+    //     .pagination-link {
+    //         border-radius: 290486px;
+    //     }
+    // }
+    // .pagination-list {
+    //     align-items: center;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     flex-wrap: wrap;
+    // }
+    // .pagination-ellipsis {
+    //     font-size: 1em;
+    //     padding-left: 0.5em;
+    //     padding-right: 0.5em;
+    //     justify-content: center;
+    //     margin: 0.25rem;
+    //     text-align: center;
+    //     color: #b5b5b5;
+    //     pointer-events: none;
+    // }
+    // .pagination-link {
+    //     font-size: 1em;
+    //     padding-left: 0.5em;
+    //     padding-right: 0.5em;
+    //     justify-content: center;
+    //     margin: 0.25rem;
+    //     text-align: center;
+    //     border-color: #dbdbdb;
+    //     color: #363636;
+    //     min-width: 2.25em;
+    //     &:hover {
+    //         border-color: #b5b5b5;
+    //         color: #363636;
+    //     }
+    //     &:focus {
+    //         border-color: $primary;
+    //     }
+    //     &:active {
+    //         box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+    //     }
+    // }
+    // .pagination-next {
+    //     font-size: 1em;
+    //     padding-left: 0.5em;
+    //     padding-right: 0.5em;
+    //     justify-content: center;
+    //     margin: 0.25rem;
+    //     text-align: center;
+    //     border-color: #dbdbdb;
+    //     color: #363636;
+    //     min-width: 2.25em;
+    //     padding-left: 0.75em;
+    //     padding-right: 0.75em;
+    //     white-space: nowrap;
+    //     &:hover {
+    //         border-color: #b5b5b5;
+    //         color: #363636;
+    //     }
+    //     &:focus {
+    //         border-color: $primary;
+    //     }
+    //     &:active {
+    //         box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+    //     }
+    // }
+    // .pagination-previous {
+    //     font-size: 1em;
+    //     padding-left: 0.5em;
+    //     padding-right: 0.5em;
+    //     justify-content: center;
+    //     margin: 0.25rem;
+    //     text-align: center;
+    //     border-color: #dbdbdb;
+    //     color: #363636;
+    //     min-width: 2.25em;
+    //     padding-left: 0.75em;
+    //     padding-right: 0.75em;
+    //     white-space: nowrap;
+    //     &:hover {
+    //         border-color: #b5b5b5;
+    //         color: #363636;
+    //     }
+    //     &:focus {
+    //         border-color: $primary;
+    //     }
+    //     &:active {
+    //         box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+    //     }
+    // }
+    // .pagination-link[disabled] {
+    //     background-color: #dbdbdb;
+    //     border-color: #dbdbdb;
+    //     box-shadow: none;
+    //     color: #7a7a7a;
+    //     opacity: 0.5;
+    // }
+    // .pagination-next[disabled] {
+    //     background-color: #dbdbdb;
+    //     border-color: #dbdbdb;
+    //     box-shadow: none;
+    //     color: #7a7a7a;
+    //     opacity: 0.5;
+    // }
+    // .pagination-previous[disabled] {
+    //     background-color: #dbdbdb;
+    //     border-color: #dbdbdb;
+    //     box-shadow: none;
+    //     color: #7a7a7a;
+    //     opacity: 0.5;
+    // }
+    // .pagination-link.is-current {
+    //     background-color: $primary;
+    //     border-color: $primary;
+    //     color: #fff;
+    // }
     .table-footer-wrapper {
         margin-top: 0.75rem;
     }
@@ -1067,6 +1068,13 @@
     }
 
 
-
+    .navbar{
+      &-item{
+        img{
+          max-height: 2.5!important;
+          padding: .5rem;
+        }
+      }
+    }
 
 }

@@ -37,7 +37,7 @@ $type = session('type');?>
                         type="text"
                         placeholder="Buscar">
                     <span class="icon is-left">
-                        <i class="fa fa-search"></i>
+                        <i class="la la-search"></i>
                     </span>
                 </div>
             </div>
@@ -54,7 +54,7 @@ $type = session('type');?>
                 <p class="control">
                     <a class="button is-primary c-white" href="<?php echo base_url('admin/products/new'); ?>">
                         <span class="icon is-small">
-                            <i class="fa fa-plus"></i>
+                            <i class="la la-plus"></i>
                         </span>
                         <span>Crear Producto</span>
                     </a>
@@ -62,7 +62,7 @@ $type = session('type');?>
                 <p class="control">
                     <a class="button" id="table-reload">
                         <span class="icon is-small">
-                            <i class="fa fa-refresh"></i>
+                            <i class="la la-refresh"></i>
                         </span>
                         <span>Actualizar</span>
                     </a>
@@ -123,7 +123,7 @@ $type = session('type');?>
                                             method="post">
                                             <button type="submit" class="button is-rounded is-text">
                                                 <span class="icon">
-                                                    <i class="fa fa-edit"></i>
+                                                    <i class="la la-edit"></i>
                                                 </span>
                                             </button>
                                         </form>
@@ -132,7 +132,7 @@ $type = session('type');?>
                               <p class="control">
                                   <a class="button is-rounded is-text action-delete modal-button" data-target="modal-<?=$product['id_product']?>">
                                       <span class="icon">
-                                          <i class="fa fa-trash"></i>
+                                          <i class="la la-trash"></i>
                                       </span>
                                   </a>
                               </p>

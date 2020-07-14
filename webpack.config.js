@@ -7,7 +7,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
     output: {
         //publicPath: '',
-        path: path.resolve(__dirname, 'public/'),
+        path: path.resolve(__dirname, './'),
         filename: "assets/js/app.js"
     },
     resolve: {
@@ -39,7 +39,7 @@ module.exports = {
                     'style-loader', {
                         loader: "file-loader",
                         options: {
-                            name: "css/[name].css"
+                            name: "assets/css/[name].css"
                         }
                     },
                     'css-loader'
@@ -90,14 +90,14 @@ module.exports = {
             }
         ]),
         new BrowserSyncPlugin({
-            open: true,
+            open: false,
             host: '127.1.1.0',
             port: 3000,
             proxy: 'http://localhost:8888',
             files: [
                 {
                     match: [
-                        '*.php', '**/*.php', 'public/**/*.css', 'public/**/*.vue', 'public/**/*.js'
+                        '*.php', '**/*.php', 'assets/**/*.css', 'src/**/*.vue', '**/*.js'
 
                     ],
                     fn: function (event, file) {

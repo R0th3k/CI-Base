@@ -1,3 +1,4 @@
+<?php $version = "0.0.34" ?>
 <!doctype html>
 <html class="no-js" lang="es">
     <head>
@@ -19,12 +20,13 @@
             rel="icon"
             type="image/png"
             href="<?php echo base_url('assets/images/icon.png'); ?>">
-        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css'); ?>">
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css') . '?v=' . $version ; ?>">
         <?php echo $this->renderSection('styles'); ?>
 
         <meta name="theme-color" content="#FFFFFF">
@@ -42,7 +44,7 @@
                 id="app-header">
                 <div class="navbar-brand column is-2 is-paddingless">
                     <a class="navbar-item" href="<?=base_url('admin')?>">
-                        CI Base
+                        <img src="<?=base_url('assets/images/logotipo.png')?>" alt="Grupo A">
                     </a>
                     <a
                         role="button"
@@ -117,10 +119,10 @@
                         </p>
 
                         <ul class="menu-list">
-                            <li class="<?php echo (current_url() == base_url('admin')) ? 'is-active' : ''?>" >
+                            <li class="<?php echo (current_url() == base_url('admin')) ? 'is-active' : ''?> is-hidden" >
                                 <a href="<?=base_url('admin')?>">
                                     <span class="icon">
-                                        <i class="fa fa-home"></i>
+                                        <i class="la la-home"></i>
                                     </span>
                                     Inicio
                                 </a>
@@ -130,64 +132,50 @@
                             <li class="<?php echo (current_url() == base_url('admin/products')) ? 'is-active' : ''?>" >
                                 <a href="<?=base_url('admin/products')?>">
                                     <span class="icon">
-                                        <i class="fa fa-users"></i>
+                                        <i class="la la-boxes"></i>
                                     </span>
                                     Productos
+                                </a>
+                            </li>
+                            <li class="<?php echo (current_url() == base_url('admin/categories')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('admin/categories')?>">
+                                    <span class="icon">
+                                        <i class="la la-list"></i>
+                                    </span>
+                                    Categorías
+                                </a>
+                            </li>
+                            <li class="<?php echo (current_url() == base_url('admin/brands')) ? 'is-active' : ''?> is-hiddenz" >
+                                <a href="<?=base_url('admin/brands')?>">
+                                    <span class="icon">
+                                        <i class="la la-star"></i>
+                                    </span>
+                                    Marcas
                                 </a>
                             </li>
 
                             <li class="<?php echo (current_url() == base_url('admin/users')) ? 'is-active' : ''?>" >
                                 <a href="<?=base_url('admin/users')?>">
                                     <span class="icon">
-                                        <i class="fa fa-users"></i>
+                                        <i class="la la-users"></i>
                                     </span>
                                     Usuarios
                                 </a>
                             </li>
 
+                            <li class="<?php echo (current_url() == base_url('logout')) ? 'is-active' : ''?>" >
+                                <a href="<?=base_url('logout')?>">
+                                    <span class="icon">
+                                      <i class="las la-door-open"></i>
+                                    </span>
+                                    Cerrar Sesión
+                                </a>
+                            </li>
+
 
                         </ul>
 
-                        <p class="menu-label is-hidden-touch">
-                            Sample Pages
-                        </p>
 
-                        <ul class="menu-list">
-                            <li class="<?php echo (current_url() == base_url('admin/samples/dashboard')) ? 'is-active' : ''?>">
-                                <a  href="<?=base_url('admin/samples/dashboard')?>">
-                                    <span class="icon">
-                                        <i class="fa fa-home"></i>
-                                    </span>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="<?php echo (current_url() == base_url('admin/samples/forms')) ? 'is-active' : ''?>">
-                                <a  href="<?=base_url('admin/samples/forms')?>">
-                                    <span class="icon">
-                                        <i class="fa fa-edit"></i>
-                                    </span>
-                                    Forms
-                                </a>
-                            </li>
-                            <li class="<?php echo (current_url() == base_url('admin/samples/ui')) ? 'is-active' : ''?>" >
-                                <a href="<?=base_url('admin/samples/ui')?>">
-                                    <span class="icon">
-                                        <i class="fa fa-desktop"></i>
-                                    </span>
-                                    UI Elements
-                                </a>
-                            </li>
-
-                            <li class="<?php echo (current_url() == base_url('admin/samples/datatables')) ? 'is-active' : ''?>">
-                                <a  href="<?=base_url('admin/samples/datatables')?>">
-                                    <span class="icon">
-                                        <i class="fa fa-table"></i>
-                                    </span>
-                                    Datatables
-                                </a>
-                            </li>
-
-                        </ul>
 
                     </aside>
                 </div>
@@ -205,7 +193,7 @@
         </div>
         <!--/app-->
 
-        <script src="<?=base_url('assets/js/app.js')?>"></script>
+        <script src="<?=base_url('assets/js/app.js') . '?v=' . $version ?>"></script>
 
         <?php echo $this->renderSection('scripts'); ?>
     </body>

@@ -85,7 +85,7 @@
                             <div class="card">
                                 <div class="card-content">
                                     <h5>Imagen Actual</h5>
-                                    <img :src="'http://localhost:3000/assets/images/uploads/' + this.c_image" :alt="this.name"/>
+                                    <img :src="'https://aluminiotrebol.com/assets/images/uploads/' + this.c_image" :alt="this.name"/>
                                     <input type="hidden" name="actual_image" id="actual_image" :value="this.c_image">
                                     <div class="divider is-size-1"></div>
                                     <h5>Cambiar imagen:</h5>
@@ -244,7 +244,7 @@
                                     //const entradasDB = await this.axios.get(apiPosts);
                                     const categories = await this
                                         .axios
-                                        .get('http://localhost:3000/api/categories')
+                                        .get('https://aluminiotrebol.com/api/categories')
                                         .then(response => response.data)
                                     this.categories = categories;
                                     console.log(categories);
@@ -258,7 +258,7 @@
                                     //const entradasDB = await this.axios.get(apiPosts);
                                     const brands = await this
                                         .axios
-                                        .get('http://localhost:3000/api/brands')
+                                        .get('https://aluminiotrebol.com/api/brands')
                                         .then(response => response.data)
                                     this.brands = brands;
                                     console.log(brands);

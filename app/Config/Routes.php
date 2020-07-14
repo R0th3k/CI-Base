@@ -31,6 +31,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Frontend::index');
+$routes->get('productos', 'Frontend::products');
+$routes->get('productos/(:any)', 'Frontend::category/$1');
+$routes->get('aviso-de-privacidad', 'Frontend::aviso');
+$routes->get('contacto', 'Frontend::contacto');
+$routes->post('contacto/enviar', 'Frontend::enviar');
 
 $routes->get('/login', 'Auth::index');
 $routes->post('/login/auth', 'Auth::autenticate');
@@ -42,8 +47,11 @@ $routes->post('/recover-password/set-new-password/(:num)', 'Auth::setNewPassword
 $routes->get('/register', 'Auth::register');
 $routes->post('/register/create', 'Auth::createUserInfrontend');
 
+
+
 $routes->group('admin', function($routes){
-  $routes->get('/', 'Backend::index');
+  // $routes->get('/', 'Backend::index');
+  $routes->get('/', 'Products::products');
 });
 
 $routes->group('admin/users', function($routes){
@@ -62,6 +70,24 @@ $routes->group('admin/products', function($routes){
   $routes->post('delete/(:num)', 'Products::deleteProduct/$1');
   $routes->post('edit/(:num)', 'Products::editProduct/$1');
   $routes->post('update/(:num)', 'Products::updateProduct/$1');
+});
+
+$routes->group('admin/categories', function($routes){
+  $routes->get('/', 'Categories::categories');
+  $routes->get('new', 'Categories::newCategory');
+  $routes->post('save', 'Categories::saveCategory');
+  $routes->post('delete/(:num)', 'Categories::deleteCategory/$1');
+  $routes->post('edit/(:num)', 'Categories::editCategory/$1');
+  $routes->post('update/(:num)', 'Categories::updateCategory/$1');
+});
+
+$routes->group('admin/brands', function($routes){
+  $routes->get('/', 'Brands::brands');
+  $routes->get('new', 'Brands::newBrand');
+  $routes->post('save', 'Brands::saveBrand');
+  $routes->post('delete/(:num)', 'Brands::deleteBrand/$1');
+  $routes->post('edit/(:num)', 'Brands::editBrand/$1');
+  $routes->post('update/(:num)', 'Brands::updateBrand/$1');
 });
 
 $routes->group('api', function($routes){

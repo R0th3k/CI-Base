@@ -105,7 +105,7 @@
                                                         class="input"
                                                         type="text"
                                                         placeholder="Precio"
-                                                        required="required">
+                                                        >
                                                         <span class="icon is-small is-left">
                                                             <icon name="monetization_on"></icon>
                                                         </span>
@@ -223,7 +223,7 @@
                                     //const entradasDB = await this.axios.get(apiPosts);
                                     const categories = await this
                                         .axios
-                                        .get('http://localhost:3000/api/categories')
+                                        .get('https://aluminiotrebol.com/api/categories')
                                         .then(response => response.data)
                                     this.categories = categories;
                                     console.log(categories);
@@ -237,7 +237,7 @@
                                     //const entradasDB = await this.axios.get(apiPosts);
                                     const brands = await this
                                         .axios
-                                        .get('http://localhost:3000/api/brands')
+                                        .get('https://aluminiotrebol.com/api/brands')
                                         .then(response => response.data)
                                     this.brands = brands;
                                     console.log(brands);

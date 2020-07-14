@@ -26,3 +26,25 @@ a.navbar-item:hover {
 .ck.ck-editor {
     min-height: 250px;
 }
+
+.navbar{
+  &-item{
+    font-weight: 600;
+    img{
+      max-height: inherit;
+    }
+  }
+}
+
+.button{
+  &.is-primary{
+    color:white;
+  }
+}
+
+
+.pagination-link.is-current {
+  background-color: $primary;
+  border-color: $primary;
+  color: findColorInvert($primary);
+}

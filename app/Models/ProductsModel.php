@@ -37,7 +37,7 @@ class ProductsModel extends Model {
           'product_slug' => 'required|min_length[3]',
           'product_description' => 'required|min_length[3]',
           // 'product_image' => 'min_length[3]',
-          'product_price' => 'min_length[3]',
+          'product_price' => 'min_length[0]',
           'product_price_discount' => 'min_length[0]',
           // 'product_paypal_code' => 'min_length[3]',
           // 'product_featured' => '',

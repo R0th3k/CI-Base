@@ -4,8 +4,13 @@ Vue.config.productionTip = false;
 import axios from 'axios'
 axios.defaults.baseURL = process.env.BASE_URL;
 export default axios;
+
 import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
+
+import Vuelidate from 'vuelidate'
+Vue.use(Vuelidate)
+
 
 import holamundo from './js/components/HolaMundo.vue';
 import login from './js/components/Login.vue';
@@ -19,15 +24,31 @@ import edit_user from './js/components/editUser.vue';
 import new_product from './js/components/NewProduct.vue';
 import edit_product from './js/components/EditProduct.vue';
 
+import new_category from './js/components/NewCategory.vue';
+import edit_category from './js/components/EditCategory.vue';
+
+import new_brand from './js/components/NewBrand.vue';
+import edit_brand from './js/components/EditBrand.vue';
+
+import home_slider from './js/components/HomeSlider.vue';
+import contact from './js/components/Contact.vue';
+
 import avatar from './js/components/ui/Avatar.vue';
 import btn from './js/components/ui/Button.vue';
 import file_select from './js/components/ui/FileSelect.vue';
+import icon from './js/components/ui/Icon.vue';
+import product_card from './js/components/ui/ProductCard.vue';
 
+import VueCarousel from '@chenfengyuan/vue-carousel';
+Vue.use(VueCarousel);
+
+import carousel from 'vue-owl-carousel';
 
 new Vue({
     el: '#app',
     components: {
         holamundo,
+        icon,
         login,
         avatar,
         register,
@@ -39,6 +60,15 @@ new Vue({
         new_product,
         edit_product,
         file_select,
+        new_category,
+        edit_category,
+        new_brand,
+        edit_brand,
+        home_slider,
+        product_card,
+        carousel,
+        contact
+
     },
     data: {
         hello: 'Hello World !'
